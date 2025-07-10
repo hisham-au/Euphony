@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:euphony/screens/home.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(EuphonyApp());
+}
+
+class EuphonyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Euphony',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        fontFamily: 'Chillax',
+        primaryColor: Color(0xFF00D4FF), // Ice Blue
+        scaffoldBackgroundColor: Colors.black,
+        colorScheme: ColorScheme.dark(
+          primary: Color(0xFF00D4FF),
+          secondary: Color(0xFFB7410E), // Rust
+        ),
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
