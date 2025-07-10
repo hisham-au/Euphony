@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Euphony'),
+      ),
+      body: Center(
+        child: Text(
+          'Welcome to Euphony!\nYour music, your vibe.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 24),
+        ),
+      ),
+    );
+  }
+}
