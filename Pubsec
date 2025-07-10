@@ -1,0 +1,30 @@
+name: euphony
+description: A fresh music streaming app with artist and listener profiles.
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.4.0
+  cloud_firestore: ^4.7.0
+  firebase_storage: ^11.3.0
+  provider: ^6.0.5
+  just_audio: ^0.9.27
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+  fonts:
+    - family: Chillax
+      fonts:
+        - asset: assets/fonts/Chillax-Regular.ttf
